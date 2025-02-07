@@ -4,7 +4,12 @@
   "description": "FingerBones! One of the most interesting topics around, this api will expose endpoints to get details about different finger bones. How exciting is that?!",
   "main": "app.js",
   "dependencies": {
-	  "express": "4.21.2"
-  }, 
-  "author": "Lars Friis Hansen" 
+    "express": "4.21.2"
+  },
+  "author": "Lars Friis Hansen",
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0"
+  }
 }

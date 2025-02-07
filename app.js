@@ -21,7 +21,7 @@ const fingerBones = [
     id: 4,
     name: "Metacarpals",
     description: "Bones in the palm that support finger movement."
-  }
+  },
 ];
 
 const getFingerBoneById = (id) => {
@@ -35,12 +35,11 @@ app.get('/fingerbones', (req, res) => {
 })
 
 app.get('/fingerbones/:id', (req, res) => {
-  console.log(req.params.id);
   const fingerBone = getFingerBoneById(req.params.id)
   if (!fingerBone) {
-    res.status(404).send({ error: "Resource not found"  });
+     res.status(404).send({ error: "Resource not found" });
   }
-  res.send(fingerBone);
+  res.send(fingerBone)
 })
 
 app.listen(8080)
