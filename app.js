@@ -29,7 +29,6 @@ const getFingerBoneById = (id) => {
   return fingerBones.find(finger => finger.id === Number(id));
 }
 
-
 app.get('/fingerbones', (req, res) => {
   res.send(fingerBones);
 })
