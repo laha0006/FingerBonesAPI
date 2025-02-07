@@ -25,7 +25,6 @@ const fingerBones = [
 ];
 
 const getFingerBoneById = (id) => {
-  console.log("GET DA BONE");
   return fingerBones.find(finger => finger.id === Number(id));
 }
 
